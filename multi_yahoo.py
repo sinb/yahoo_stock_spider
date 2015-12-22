@@ -34,6 +34,7 @@ def create_db(conn):
     query = 'CREATE DATABASE IF NOT EXISTS stock_data'
     cur.execute(query)
     cur.close()
+    
 def create_table(conn):
     query = '''
     USE stock_data;
